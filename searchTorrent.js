@@ -19,7 +19,7 @@ request(searchUrl, function (error, response, body) {
 		console.log($(this).text() + " => " + url)
 	})
 
-	let wget = spawn('wget', ['-Ofile.torrent','http://www.torrent9.pe' + Res[0].url])
+/*	let wget = spawn('wget', ['-Ofile.torrent','http://www.torrent9.pe' + Res[0].url])
 	wget.on('close', (code) => {
   		console.log(`wget exited with code ${code}`);
 	});
@@ -35,7 +35,7 @@ request(searchUrl, function (error, response, body) {
 	tr.on('close', (code) => {
   		console.log(`transmission exited with code ${code}`);
 	});
-
+*/
 })
 
 
