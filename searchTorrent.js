@@ -24,8 +24,6 @@ request(searchUrl, function (error, response, body) {
   		console.log(`wget exited with code ${code}`);
 	});
 
-	spawn('mkdir', ['dl'])
-
 	let tr = spawn('transmission-cli', ['-w dl', 'file.torrent'])
 	tr.stdout.on('data', (data) => {
   		console.log(`stdout: ${data}`);
